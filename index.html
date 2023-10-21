@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Subject">Subject:</label>
+                        <input type="text" name="Subject" id="Subject"required>
+                    </div>
+                    <div>
+                        <label for="start">date:</label>
+                        <input type="date" id="start" name="trip-start" required />
+                    </div>
+                    <div>
+                        <label for="MyClockDisplay">Time:</label>
+                        <input type="time" name="MyClockDisplay" id="MyClockDisplay" required>
+                    </div>
+                    <div>
+                        <label for="Room">Room:</label>
+                        <input type="number" name="Room" id="Room"required>
+                    </div>
+                    <div>
+                        <label for="Instructor">Instructor:</label>
+                        <input type="text" name="Instructor" id="Instructor"required>
+                    </div>
+
+                    <div class="form_action--button">
+                        <button class="glow-on-hover" type="submit">Submit</button>
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Room</th>
+                                <th>Instructor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>
